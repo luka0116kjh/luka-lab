@@ -18,7 +18,7 @@
 
   <main class="max-w-6xl mx-auto p-6 space-y-8">
     <section class="bg-white rounded-lg shadow p-6">
-      <h2 class="text-2xl font-bold mb-4">📘 학습 주제</h2>
+      <h2 class="text-2xl font-bold mb-4">학습 주제</h2>
       <ul class="list-disc list-inside space-y-2 text-gray-700">
         <li>기초 자료구조 — Stack, Queue, Linked List</li>
         <li>정렬 알고리즘 — Bubble, Merge, Quick Sort</li>
@@ -28,15 +28,15 @@
     </section>
 
     <section class="bg-white rounded-lg shadow p-6">
-      <h2 class="text-2xl font-bold mb-4">💡 코드 예시</h2>
+      <h2 class="text-2xl font-bold mb-4"> 코드 예시</h2>
       <pre class="bg-gray-100 p-4 rounded text-sm overflow-x-auto">
-def gcd(a, b):
-    while b:
-        a, b = b, a % b
-    return a
-
-def lcm(a, b):
-    return a * b // gcd(a, b)
+for a in range(1, 1001):
+    for b in range(a + 1, 1001):
+        # a < b < c 
+        c = - b - a + 1000 
+        if c > b and pow(a, 2) + pow(b, 2) == pow(c, 2):
+            print(a * b * c)
+        
       </pre>
     </section>
   </main>
