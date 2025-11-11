@@ -52,3 +52,18 @@ button:hover, a:hover {
 .dark .bg-cover {
   filter: brightness(0.8);
 }
+/* --- Footer 하단 고정 (Sticky) --- */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* 본문이 남은 공간을 채우게 */
+}
+
+footer {
+  margin-top: auto; /* 항상 맨 아래로 밀기 */
+}
