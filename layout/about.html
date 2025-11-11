@@ -1,45 +1,63 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About — Luka Lab</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Luka</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body class="bg-gray-50 text-gray-800">
-  <header class="bg-white shadow p-4 sticky top-0 z-40">
-    <div class="max-w-6xl mx-auto flex justify-between items-center">
-      <a href="../index.html" class="text-blue-600 font-bold text-lg">← Luka Lab</a>
-      <h1 class="text-gray-700 font-medium">About Me</h1>
+<body class="bg-gray-50 text-gray-800 antialiased">
+  <header class="bg-white shadow p-4">
+    <div class="max-w-6xl mx-auto flex items-center justify-between">
+      <a href="../index.html" class="text-blue-600 font-bold">← Luka Lab</a>
+      <h1 class="text-gray-700 font-medium">About</h1>
     </div>
   </header>
 
-  <main class="max-w-4xl mx-auto p-6 space-y-6">
+  <main class="max-w-4xl mx-auto p-6">
     <section class="bg-white rounded-lg shadow p-6">
-      <div class="flex flex-col md:flex-row items-center md:items-start gap-6">
-        <img src="../crow.png" alt="Luka 프로필 사진" class="w-36 h-36 rounded-full shadow-md object-cover">
+      <div class="flex flex-col md:flex-row items-center gap-6">
+        <img src="../img/crow.png" alt="Luka 프로필 사진" class="w-36 h-36 rounded-full shadow-md object-cover">
 
         <div>
-          <h2 class="text-2xl font-bold mb-2">Luka (김진형)</h2>
-          <p class="text-gray-700 mb-4 leading-relaxed">
-            안녕하세요 👋 저는 소프트웨어 개발과 보안을 공부하는 <b>Luka</b>입니다.  
-            경기자동차과학고에 재학 중이며, AI 및 정보보안안 분야에 큰 관심을 가지고 있습니다.  
-            또한 <b>Order Zero</b> 프로젝트를를 대화형 AI와 보안 기술을 융합하는 실험을 진행 중이에요.
+          <h2 class="text-3xl font-bold mb-2">Luka (김진형)</h2>
+          <p class="text-gray-700 leading-relaxed mb-3">
+            안녕하세요, Luka입니다. 저는 <strong>Python</strong>을 중심으로 프로그래밍을 수행하며,
+            웹 개발(HTML/CSS, JavaScript)과 웹 보안(CTF, Web Hacking)에 깊은 관심을 두고 있습니다.
+            실전 문제 풀이와 프로젝트를 통해 문제 해결 능력과 시스템 이해도를 동시에 키우고 있습니다.
           </p>
-          <ul class="text-gray-600 text-sm space-y-1">
-            <li>시흥시 | 경기자동차과학고</li>
-            <li>관심 분야: AI, Web Hacking, Security, UX Design</li>
-            <li>Email: <a href="mailto:kjh08116@naver.com" class="text-blue-600 hover:underline">kjh08116@naver.com</a></li>
-            <li>GitHub: <a href="https://github.com/luka0116kjh" target="_blank" class="text-blue-600 hover:underline">@luka0116kjh</a></li>
+
+          <h3 class="text-lg font-semibold mt-4">핵심 스킬</h3>
+          <div class="flex flex-wrap gap-2 mt-2">
+            <span class="px-3 py-1 bg-gray-100 rounded">Python</span>
+            <span class="px-3 py-1 bg-gray-100 rounded">JavaScript</span>
+            <span class="px-3 py-1 bg-gray-100 rounded">HTML / CSS</span>
+            <span class="px-3 py-1 bg-gray-100 rounded">CTF / Forensics</span>
+            <span class="px-3 py-1 bg-gray-100 rounded">Web Hacking</span>
+          </div>
+
+          <h3 class="text-lg font-semibold mt-4">프로젝트 & 관심사</h3>
+          <ul class="list-disc list-inside text-gray-700 mt-2">
+            <li>Order Zero — 대화형 AI 에이전트 개발(개인 연구)</li>
+            <li>CTF 문제 풀이 및 Web 취약점 분석/리포트 작성</li>
+            <li>작업 자동화 스크립트 / 데이터 전처리 툴 개발</li>
           </ul>
+
+          <p class="text-gray-600 mt-4 italic">“보안과 개발 및 디자인분야에서 정점을 찍는것이이 목표입니다.”</p>
+
+          <div class="mt-4 text-sm text-gray-700">
+            <div> 경기자동차과학고</div>
+            <div> <a href="mailto:kjh08116@naver.com" class="text-blue-600">kjh08116@naver.com</a></div>
+            <div> <a href="https://github.com/luka0116kjh" target="_blank" class="text-blue-600">@luka0116kjh</a></div>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="mt-12 bg-gray-900 text-gray-300 text-center py-6">
-    <p>© 2025 Luka Lab — Built by Luka</p>
+    <p>© 2025 Luka Lab — Luka</p>
   </footer>
 </body>
 </html>

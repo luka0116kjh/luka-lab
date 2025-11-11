@@ -46,3 +46,9 @@ button, a {
 button:hover, a:hover {
   transform: translateY(-1px);
 }
+.footer {
+  position: fixed
+}
+.dark .bg-cover {
+  filter: brightness(0.8);
+}
