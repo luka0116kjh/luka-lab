@@ -3,44 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Python — Luka Lab</title>
+  <title>Algorithms — Luka Lab</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-gray-50 text-gray-800 antialiased">
 
-  <header class="bg-white shadow p-4 sticky top-0">
+  <header class="bg-white shadow p-4 sticky top-0 z-40">
     <div class="max-w-6xl mx-auto flex justify-between items-center">
       <a href="../index.html" class="text-blue-600 font-bold text-lg">← Luka Lab</a>
-      <h1 class="text-gray-700 text-sm">Python / 더보기</h1>
+      <h1 class="text-gray-700 font-medium">Algorithms</h1>
     </div>
   </header>
 
   <main class="max-w-6xl mx-auto p-6 space-y-8">
     <section class="bg-white rounded-lg shadow p-6">
-      <h2 class="text-2xl font-bold mb-4">Python Projects</h2>
-      <ul class="divide-y">
-        <li class="py-3">CSV 전처리 자동화 스크립트</li>
-        <li class="py-3">Pandas 데이터 시각화 예제</li>
-        <li class="py-3">파일 암호화 / 복호화 유틸</li>
+      <h2 class="text-2xl font-bold mb-4">📘 학습 주제</h2>
+      <ul class="list-disc list-inside space-y-2 text-gray-700">
+        <li>기초 자료구조 — Stack, Queue, Linked List</li>
+        <li>정렬 알고리즘 — Bubble, Merge, Quick Sort</li>
+        <li>탐색 — BFS, DFS, 이분 탐색</li>
+        <li>수학 — 최대공약수, 최소공배수, 소수 판별</li>
       </ul>
     </section>
 
     <section class="bg-white rounded-lg shadow p-6">
-      <h2 class="text-2xl font-bold mb-4">코드 예시</h2>
-      <pre class="bg-gray-100 p-3 rounded text-sm overflow-auto">
-import pandas as pd
+      <h2 class="text-2xl font-bold mb-4">💡 코드 예시</h2>
+      <pre class="bg-gray-100 p-4 rounded text-sm overflow-x-auto">
+def gcd(a, b):
+    while b:
+        a, b = b, a % b
+    return a
 
-def load_csv(path):
-    df = pd.read_csv(path)
-    print(df.head())
+def lcm(a, b):
+    return a * b // gcd(a, b)
       </pre>
     </section>
   </main>
 
   <footer class="mt-12 bg-gray-900 text-gray-300 text-center py-6">
-    <p>© 2025 Luka Lab — Python Layout</p>
+    <p>© 2025 Luka Lab — Algorithms</p>
   </footer>
-
 </body>
 </html>

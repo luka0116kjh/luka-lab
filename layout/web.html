@@ -5,55 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Web Hacking — Luka Lab</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-gray-50 text-gray-800 antialiased">
 
-  <header class="bg-white shadow p-4 sticky top-0">
+  <header class="bg-white shadow p-4 sticky top-0 z-40">
     <div class="max-w-6xl mx-auto flex justify-between items-center">
       <a href="../index.html" class="text-blue-600 font-bold text-lg">← Luka Lab</a>
-      <h1 class="text-gray-700 text-sm">Web Hacking / 더보기</h1>
+      <h1 class="text-gray-700 font-medium">Web Hacking</h1>
     </div>
   </header>
 
   <main class="max-w-6xl mx-auto p-6 space-y-8">
     <section class="bg-white rounded-lg shadow p-6">
-      <h2 class="text-2xl font-bold mb-4">Web Hacking Projects</h2>
+      <h2 class="text-2xl font-bold mb-4">🔍 취약점 분석</h2>
       <ul class="divide-y">
         <li class="py-3">
-          <a href="#" class="flex justify-between items-center">
-            <span>XSS Message Board 취약점 분석</span>
-            <small class="text-gray-500">Writeup</small>
-          </a>
+          <span class="font-semibold">XSS Message Board</span>
+          <p class="text-sm text-gray-600">DOM 기반 스크립트 삽입과 필터 우회 테스트</p>
         </li>
         <li class="py-3">
-          <a href="#" class="flex justify-between items-center">
-            <span>SQL Injection 로그인 우회</span>
-            <small class="text-gray-500">PoC</small>
-          </a>
+          <span class="font-semibold">SQL Injection 로그인 우회</span>
+          <p class="text-sm text-gray-600">Prepared Statement 미사용 취약점 분석</p>
         </li>
         <li class="py-3">
-          <a href="#" class="flex justify-between items-center">
-            <span>PCAP Forensics 분석</span>
-            <small class="text-gray-500">Forensic</small>
-          </a>
+          <span class="font-semibold">PCAP 포렌식</span>
+          <p class="text-sm text-gray-600">네트워크 캡처 기반 유출 경로 추적</p>
         </li>
       </ul>
     </section>
 
     <section class="bg-white rounded-lg shadow p-6">
-      <h2 class="text-2xl font-bold mb-4">CTF Writeups</h2>
-      <ul class="list-disc list-inside text-gray-700 space-y-2">
-        <li>OWASP Juice Shop XSS 필터링 우회</li>
-        <li>Burp Suite Intruder를 이용한 로그인 Brute Force</li>
-        <li>DNS exfiltration payload 분석</li>
+      <h2 class="text-2xl font-bold mb-4">🧠 학습 & 도구</h2>
+      <ul class="list-disc list-inside space-y-2 text-gray-700">
+        <li>Burp Suite, OWASP ZAP</li>
+        <li>tshark, Wireshark, Fiddler</li>
+        <li>CTF 문제 풀이 & Write-up 기록</li>
       </ul>
     </section>
   </main>
 
   <footer class="mt-12 bg-gray-900 text-gray-300 text-center py-6">
-    <p>© 2025 Luka Lab — Web Hacking Layout</p>
+    <p>© 2025 Luka Lab — Web Hacking</p>
   </footer>
-
 </body>
 </html>

@@ -3,57 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Web Hacking — Luka Lab</title>
+  <title>Python — Luka Lab</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-gray-50 text-gray-800 antialiased">
 
-  <header class="bg-white shadow p-4 sticky top-0">
+  <header class="bg-white shadow p-4 sticky top-0 z-40">
     <div class="max-w-6xl mx-auto flex justify-between items-center">
       <a href="../index.html" class="text-blue-600 font-bold text-lg">← Luka Lab</a>
-      <h1 class="text-gray-700 text-sm">Web Hacking / 더보기</h1>
+      <h1 class="text-gray-700 font-medium">Python Projects</h1>
     </div>
   </header>
 
   <main class="max-w-6xl mx-auto p-6 space-y-8">
     <section class="bg-white rounded-lg shadow p-6">
-      <h2 class="text-2xl font-bold mb-4">Web Hacking Projects</h2>
+      <h2 class="text-2xl font-bold mb-4">📘 학습 & 실습</h2>
+      <ul class="list-disc list-inside space-y-2 text-gray-700">
+        <li>기본 문법 — 변수, 조건문, 반복문, 함수</li>
+        <li>파일 입출력, 예외 처리, 클래스 구조</li>
+        <li>라이브러리: <b>Pandas</b>, <b>Matplotlib</b>, <b>Requests</b></li>
+        <li>CLI 유틸리티 자동화 실습</li>
+      </ul>
+    </section>
+
+    <section class="bg-white rounded-lg shadow p-6">
+      <h2 class="text-2xl font-bold mb-4">🧩 프로젝트 예시</h2>
       <ul class="divide-y">
         <li class="py-3">
-          <a href="#" class="flex justify-between items-center">
-            <span>XSS Message Board 취약점 분석</span>
-            <small class="text-gray-500">Writeup</small>
-          </a>
+          <span class="font-semibold">데이터 전처리 자동화</span>
+          <p class="text-sm text-gray-600">엑셀 CSV 파일을 정리하고 분석하는 스크립트</p>
         </li>
         <li class="py-3">
-          <a href="#" class="flex justify-between items-center">
-            <span>SQL Injection 로그인 우회</span>
-            <small class="text-gray-500">PoC</small>
-          </a>
+          <span class="font-semibold">이미지 정리 유틸</span>
+          <p class="text-sm text-gray-600">파일 이름 자동 변경 및 폴더 정리</p>
         </li>
         <li class="py-3">
-          <a href="#" class="flex justify-between items-center">
-            <span>PCAP Forensics 분석</span>
-            <small class="text-gray-500">Forensic</small>
-          </a>
+          <span class="font-semibold">Crypto File Lock</span>
+          <p class="text-sm text-gray-600">AES 기반 파일 암호화 도구</p>
         </li>
       </ul>
     </section>
 
     <section class="bg-white rounded-lg shadow p-6">
-      <h2 class="text-2xl font-bold mb-4">CTF Writeups</h2>
-      <ul class="list-disc list-inside text-gray-700 space-y-2">
-        <li>OWASP Juice Shop XSS 필터링 우회</li>
-        <li>Burp Suite Intruder를 이용한 로그인 Brute Force</li>
-        <li>DNS exfiltration payload 분석</li>
-      </ul>
+      <h2 class="text-2xl font-bold mb-4">💻 코드 샘플</h2>
+      <pre class="bg-gray-100 p-4 rounded text-sm overflow-x-auto">
+import os, hashlib
+
+def hash_file(path):
+    with open(path, "rb") as f:
+        return hashlib.sha256(f.read()).hexdigest()
+
+print(hash_file("test.txt"))
+      </pre>
     </section>
   </main>
 
   <footer class="mt-12 bg-gray-900 text-gray-300 text-center py-6">
-    <p>© 2025 Luka Lab — Web Hacking Layout</p>
+    <p>© 2025 Luka Lab — Python Projects</p>
   </footer>
-
 </body>
 </html>
