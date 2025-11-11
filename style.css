@@ -67,13 +67,3 @@ main {
 footer {
   margin-top: auto; /* 항상 맨 아래로 밀기 */
 }
-/* Section Fade-in Animation */
-section {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
-}
-section.show {
-  opacity: 1;
-  transform: translateY(0);
-}
