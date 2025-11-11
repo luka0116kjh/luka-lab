@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Luka blog — Python · Web Hacking · Algorithms · AI</title>
+  <title>Luka blog – Python · Web Hacking · Algorithms · AI</title>
   <meta name="description" content="Luka's portfolio: Python, Web Hacking, Algorithms, and AI projects.">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css">
@@ -24,22 +24,21 @@
           <li><a href="#algo" class="hover:text-blue-500">Algorithms</a></li>
           <li><a href="#ai" class="hover:text-blue-500">AI</a></li>
           <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
-          <li><a href="layout/about.html" class="hover:text-blue-500">About</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- 🌙☀️ 다크모드 버튼 -->
+  <!-- 🌙☀️ 다크모드  -->
   <button id="theme-toggle"
     class="fixed bottom-5 right-5 bg-blue-600 text-white p-3 rounded-full shadow-lg transition hover:bg-blue-700 z-50"
     aria-label="Toggle theme">
     🌙
   </button>
 
-  <!-- ✅ Hero Section (이미지 경로 수정됨) -->
-  <section class="relative w-full h-64 md:h-80 bg-center bg-cover"
-  style="background-image: url('./img/레제.webp');">
+  <!-- Hero Section -->
+  <section class="relative w-full min-h-[20rem] bg-center bg-cover bg-no-repeat"
+  style="background-image: url('./Reze.webp');">
   <div class="absolute inset-0 bg-black/30 flex flex-col items-center justify-center text-center">
     <h1 class="text-white text-4xl md:text-5xl font-bold drop-shadow-lg">Welcome to Luka blog</h1>
     <p class="text-gray-200 mt-3 text-sm md:text-base">Python · Web Hacking · Algorithms · AI</p>
@@ -47,22 +46,17 @@
 </section>
 
 
-  <!-- Main Content -->
   <main class="max-w-6xl mx-auto space-y-12 p-6">
-
     <!-- Home -->
     <section id="home" class="pt-12">
       <h1 class="text-4xl font-extrabold mb-4">Welcome to Luka blog</h1>
       <p class="text-gray-700 mb-6">
         Python, Web Hacking, Algorithms, and AI 관련 프로젝트를 한눈에 볼 수 있는 개인 연구 공간입니다.
       </p>
-      <a href="layout/about.html"
-        class="inline-block px-4 py-2 bg-gray-200 text-gray-800 rounded hover:bg-gray-300 transition">
-        About Me
-      </a>
-      <a href="#python" class="inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">
-        Start Exploring
-      </a>
+       <a href="layout/about.html" class="inline-block px-4 py-2 bg-gray-200 text-gray-800 rounded hover:bg-gray-300 transition">
+      About Me
+    </a>
+      <a href="#python" class="inline-block px-4 py-2 bg-blue-600 text-white rounded">Start Exploring</a>
     </section>
 
     <!-- Python -->
@@ -72,16 +66,23 @@
           <h2 class="text-2xl font-bold mb-2">Python</h2>
           <p class="text-gray-700 mb-4">Python 프로젝트, 실습 예제.</p>
         </div>
-        <a href="layout/python.html" class="px-3 py-1 border rounded text-sm hover:bg-gray-100 transition">더보기</a>
+        <a href="layout/python.html" class="px-3 py-1 border rounded text-sm">더보기</a>
       </div>
-      <div class="grid md:grid-cols-2 gap-4 mt-4">
-        <a href="layout/python_csv.html" class="border rounded p-4 hover:bg-blue-50 transition block">
-          <h3 class="font-semibold text-lg text-blue-600">CSV 전처리 자동화</h3>
-          <p class="text-sm text-gray-600">Pandas, openpyxl 예제</p>
+
+      <!-- card block -->
+      <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+        <a href="layout/python_csv.html"
+          class="group block border rounded p-4 hover:bg-blue-50 dark:hover:bg-blue-900/40 transition shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-300"
+          aria-label="CSV 전처리 자동화 (Pandas, openpyxl 예제)">
+          <h3 class="font-semibold text-lg text-blue-600 group-hover:underline">CSV 전처리 자동화</h3>
+          <p class="text-sm text-gray-600 mt-1">Pandas, openpyxl 예제</p>
         </a>
-        <a href="layout/python_crypto.html" class="border rounded p-4 hover:bg-blue-50 transition block">
-          <h3 class="font-semibold text-lg text-blue-600">Crypto 유틸</h3>
-          <p class="text-sm text-gray-600">파일 암호화 실습</p>
+
+        <a href="layout/python_crypto.html"
+          class="group block border rounded p-4 hover:bg-blue-50 dark:hover:bg-blue-900/40 transition shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-300"
+          aria-label="Crypto 유틸 (파일 암호화 실습)">
+          <h3 class="font-semibold text-lg text-blue-600 group-hover:underline">Crypto 유틸</h3>
+          <p class="text-sm text-gray-600 mt-1">파일 암호화 실습</p>
         </a>
       </div>
     </section>
@@ -93,16 +94,23 @@
           <h2 class="text-2xl font-bold mb-2">Web Hacking</h2>
           <p class="text-gray-700 mb-4">CTF Writeup, 취약점 분석.</p>
         </div>
-        <a href="layout/web.html" class="px-3 py-1 border rounded text-sm hover:bg-gray-100 transition">더보기</a>
+        <a href="layout/web.html" class="px-3 py-1 border rounded text-sm">더보기</a>
       </div>
-      <div class="grid md:grid-cols-2 gap-4 mt-4">
-        <a href="layout/web_xss.html" class="border rounded p-4 hover:bg-red-50 transition block">
-          <h3 class="font-semibold text-lg text-red-600">XSS Message Board</h3>
-          <p class="text-sm text-gray-600">DOM 기반 XSS 분석</p>
+
+      <!-- card block -->
+      <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+        <a href="layout/web_xss.html"
+          class="group block border rounded p-4 hover:bg-red-50 dark:hover:bg-red-900/30 transition shadow-sm focus:outline-none focus:ring-2 focus:ring-red-300"
+          aria-label="XSS Message Board 취약점 분석">
+          <h3 class="font-semibold text-lg text-red-600 group-hover:underline">XSS Message Board</h3>
+          <p class="text-sm text-gray-600 mt-1">DOM 기반 XSS 분석</p>
         </a>
-        <a href="layout/web_sqli.html" class="border rounded p-4 hover:bg-red-50 transition block">
-          <h3 class="font-semibold text-lg text-red-600">SQL Injection</h3>
-          <p class="text-sm text-gray-600">로그인 우회 실습</p>
+
+        <a href="layout/web_sqli.html"
+          class="group block border rounded p-4 hover:bg-red-50 dark:hover:bg-red-900/30 transition shadow-sm focus:outline-none focus:ring-2 focus:ring-red-300"
+          aria-label="SQL Injection 로그인 우회 실습">
+          <h3 class="font-semibold text-lg text-red-600 group-hover:underline">SQL Injection</h3>
+          <p class="text-sm text-gray-600 mt-1">로그인 우회 실습</p>
         </a>
       </div>
     </section>
@@ -112,18 +120,25 @@
       <div class="flex justify-between items-start">
         <div>
           <h2 class="text-2xl font-bold mb-2">Algorithms</h2>
-          <p class="text-gray-700 mb-4">Project Euler, 자료구조 실습.</p>
+          <p class="text-gray-700 mb-4"> Project Euler, 자료구조 실습.</p>
         </div>
-        <a href="layout/algo.html" class="px-3 py-1 border rounded text-sm hover:bg-gray-100 transition">더보기</a>
+        <a href="layout/algo.html" class="px-3 py-1 border rounded text-sm">더보기</a>
       </div>
-      <div class="grid md:grid-cols-2 gap-4 mt-4">
-        <a href="layout/algo_triangle.html" class="border rounded p-4 hover:bg-green-50 transition block">
-          <h3 class="font-semibold text-lg text-green-600">Triangle Divisors</h3>
-          <p class="text-sm text-gray-600">Project Euler #12 풀이</p>
+
+      <!-- card block -->
+      <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+        <a href="layout/algo_triangle.html"
+          class="group block border rounded p-4 hover:bg-green-50 dark:hover:bg-green-900/30 transition shadow-sm focus:outline-none focus:ring-2 focus:ring-green-300"
+          aria-label="Triangle Divisors – Project Euler #12 풀이">
+          <h3 class="font-semibold text-lg text-green-600 group-hover:underline">Triangle Divisors</h3>
+          <p class="text-sm text-gray-600 mt-1">Project Euler #12 풀이</p>
         </a>
-        <a href="layout/algo_ds.html" class="border rounded p-4 hover:bg-green-50 transition block">
-          <h3 class="font-semibold text-lg text-green-600">Stack & Queue</h3>
-          <p class="text-sm text-gray-600">자료구조 기본기</p>
+
+        <a href="layout/algo_ds.html"
+          class="group block border rounded p-4 hover:bg-green-50 dark:hover:bg-green-900/30 transition shadow-sm focus:outline-none focus:ring-2 focus:ring-green-300"
+          aria-label="Stack & Queue – 자료구조 연습">
+          <h3 class="font-semibold text-lg text-green-600 group-hover:underline">Stack & Queue</h3>
+          <p class="text-sm text-gray-600 mt-1">자료구조 기본기</p>
         </a>
       </div>
     </section>
@@ -135,16 +150,23 @@
           <h2 class="text-2xl font-bold mb-2">AI Projects</h2>
           <p class="text-gray-700 mb-4">Colab 실험, 모델 학습 기록.</p>
         </div>
-        <a href="layout/ai.html" class="px-3 py-1 border rounded text-sm hover:bg-gray-100 transition">더보기</a>
+        <a href="layout/ai.html" class="px-3 py-1 border rounded text-sm">더보기</a>
       </div>
-      <div class="grid md:grid-cols-2 gap-4 mt-4">
-        <a href="layout/ai_textclf.html" class="border rounded p-4 hover:bg-indigo-50 transition block">
-          <h3 class="font-semibold text-lg text-indigo-600">Text Classifier</h3>
-          <p class="text-sm text-gray-600">문장 분류 실습</p>
+
+      <!-- card block -->
+      <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+        <a href="layout/ai_textclf.html"
+          class="group block border rounded p-4 hover:bg-indigo-50 dark:hover:bg-indigo-900/30 transition shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-300"
+          aria-label="Text Classifier – 문장 분류 실습">
+          <h3 class="font-semibold text-lg text-indigo-600 group-hover:underline">Text Classifier</h3>
+          <p class="text-sm text-gray-600 mt-1">문장 분류 실습</p>
         </a>
-        <a href="layout/ai_vision.html" class="border rounded p-4 hover:bg-indigo-50 transition block">
-          <h3 class="font-semibold text-lg text-indigo-600">Vision Model</h3>
-          <p class="text-sm text-gray-600">이미지 분류 데모</p>
+
+        <a href="layout/ai_vision.html"
+          class="group block border rounded p-4 hover:bg-indigo-50 dark:hover:bg-indigo-900/30 transition shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-300"
+          aria-label="Vision Model – 이미지 분류 데모">
+          <h3 class="font-semibold text-lg text-indigo-600 group-hover:underline">Vision Model</h3>
+          <p class="text-sm text-gray-600 mt-1">이미지 분류 데모</p>
         </a>
       </div>
     </section>
@@ -152,18 +174,14 @@
     <!-- Contact -->
     <section id="contact" class="bg-white rounded-lg shadow p-6">
       <h2 class="text-2xl font-bold mb-4">Contact</h2>
-      <p class="text-gray-700 mb-2">
-        📫 <a href="mailto:kjh08116@naver.com" class="text-blue-600">kjh08116@naver.com</a>
-      </p>
-      <p class="text-gray-700">
-        🐙 <a href="https://github.com/luka0116kjh" class="text-blue-600">@github.com/luka0116kjh</a>
-      </p>
+      <p class="text-gray-700 mb-2"><a href="mailto:kjh08116@naver.com" class="text-blue-600">kjh08116@naver.com</a></p>
+      <p class="text-gray-700"> <a href="https://github.com/luka0116kjh"
+          class="text-blue-600">@github.com/luka0116kjh</a></p>
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="bg-gray-900 text-gray-300 text-center py-6">
-    <p>© 2025 Luka Lab — Built by Luka</p>
+  <footer class="mt-12 bg-gray-900 text-gray-300 text-center py-6">
+    <p>© 2025 Luka Lab – Built by Luka</p>
   </footer>
 
   <script src="script.js" defer></script>
