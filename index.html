@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luka Lab — Python · Web Hacking · Algorithms · AI</title>
+  <meta name="description" content="Luka's portfolio: Python, Web Hacking, Algorithms, and AI projects.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+  <!-- Header -->
+  <header class="bg-white shadow sticky top-0 z-40">
+    <div class="max-w-6xl mx-auto flex items-center justify-between p-4">
+      <a href="#home" class="text-2xl font-bold text-blue-600">Luka Lab</a>
+      <nav>
+        <ul class="flex gap-4 text-sm font-medium">
+          <li><a href="#home" class="hover:text-blue-500">Home</a></li>
+          <li><a href="#python" class="hover:text-blue-500">Python</a></li>
+          <li><a href="#web" class="hover:text-blue-500">Web Hacking</a></li>
+          <li><a href="#algo" class="hover:text-blue-500">Algorithms</a></li>
+          <li><a href="#ai" class="hover:text-blue-500">AI</a></li>
+          <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 🌙☀️ 다크모드  -->
+  <button id="theme-toggle" class="fixed bottom-5 right-5 bg-blue-600 text-white p-3 rounded-full shadow-lg transition hover:bg-blue-700 z-50">
+    🌙
+  </button>
+
+  <main class="max-w-6xl mx-auto space-y-12 p-6">
+    <!-- Home -->
+    <section id="home" class="pt-12">
+      <h1 class="text-4xl font-extrabold mb-4">Welcome to Luka Lab</h1>
+      <p class="text-gray-700 mb-6">
+        Python, Web Hacking, Algorithms, and AI 관련 프로젝트를 한눈에 볼 수 있는 개인 연구 공간입니다.
+      </p>
+      <a href="#python" class="inline-block px-4 py-2 bg-blue-600 text-white rounded">Start Exploring</a>
+    </section>
+
+    <!-- Python -->
+    <section id="python" class="bg-white rounded-lg shadow p-6">
+      <div class="flex justify-between items-start">
+        <div>
+          <h2 class="text-2xl font-bold mb-2">Python</h2>
+          <p class="text-gray-700 mb-4">Python 프로젝트, 자동화 코드, 실습 예제.</p>
+        </div>
+        <a href="layout/python.html" class="px-3 py-1 border rounded text-sm">더보기</a>
+      </div>
+      <div class="grid md:grid-cols-2 gap-4 mt-4">
+        <article class="border rounded p-4">
+          <h3 class="font-semibold">CSV 전처리 자동화</h3>
+          <p class="text-sm text-gray-600">Pandas, openpyxl 예제</p>
+        </article>
+        <article class="border rounded p-4">
+          <h3 class="font-semibold">Crypto 유틸</h3>
+          <p class="text-sm text-gray-600">파일 암호화 실습</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Web Hacking -->
+    <section id="web" class="bg-white rounded-lg shadow p-6">
+      <div class="flex justify-between items-start">
+        <div>
+          <h2 class="text-2xl font-bold mb-2">Web Hacking</h2>
+          <p class="text-gray-700 mb-4">CTF Writeup, 취약점 분석, 포렌식 기록.</p>
+        </div>
+        <a href="layout/web.html" class="px-3 py-1 border rounded text-sm">더보기</a>
+      </div>
+      <div class="grid md:grid-cols-2 gap-4 mt-4">
+        <article class="border rounded p-4">
+          <h3 class="font-semibold">XSS Message Board</h3>
+          <p class="text-sm text-gray-600">DOM 기반 XSS 분석</p>
+        </article>
+        <article class="border rounded p-4">
+          <h3 class="font-semibold">SQL Injection</h3>
+          <p class="text-sm text-gray-600">로그인 우회 실습</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Algorithms -->
+    <section id="algo" class="bg-white rounded-lg shadow p-6">
+      <div class="flex justify-between items-start">
+        <div>
+          <h2 class="text-2xl font-bold mb-2">Algorithms</h2>
+          <p class="text-gray-700 mb-4">BOJ, Project Euler, 자료구조 실습.</p>
+        </div>
+        <a href="layout/algo.html" class="px-3 py-1 border rounded text-sm">더보기</a>
+      </div>
+      <div class="grid md:grid-cols-2 gap-4 mt-4">
+        <article class="border rounded p-4">
+          <h3 class="font-semibold">Triangle Divisors</h3>
+          <p class="text-sm text-gray-600">Project Euler #12 풀이</p>
+        </article>
+        <article class="border rounded p-4">
+          <h3 class="font-semibold">Stack & Queue</h3>
+          <p class="text-sm text-gray-600">자료구조 기본기</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- AI -->
+    <section id="ai" class="bg-white rounded-lg shadow p-6">
+      <div class="flex justify-between items-start">
+        <div>
+          <h2 class="text-2xl font-bold mb-2">AI Projects</h2>
+          <p class="text-gray-700 mb-4">Colab 실험, 모델 학습 기록.</p>
+        </div>
+        <a href="layout/ai.html" class="px-3 py-1 border rounded text-sm">더보기</a>
+      </div>
+      <div class="grid md:grid-cols-2 gap-4 mt-4">
+        <article class="border rounded p-4">
+          <h3 class="font-semibold">Text Classifier</h3>
+          <p class="text-sm text-gray-600">문장 분류 실습</p>
+        </article>
+        <article class="border rounded p-4">
+          <h3 class="font-semibold">Vision Model</h3>
+          <p class="text-sm text-gray-600">이미지 분류 데모</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="bg-white rounded-lg shadow p-6">
+      <h2 class="text-2xl font-bold mb-4">Contact</h2>
+      <p class="text-gray-700 mb-2">📧 <a href="kjh08116@naver.com" class="text-blue-600">kjh08116@naver.com</a></p>
+      <p class="text-gray-700"> <a href="https://github.com/luka0116kjh" class="text-blue-600">@github.com/luka0116kjh</a></p>
+    </section>
+  </main>
+
+  <footer class="mt-12 bg-gray-900 text-gray-300 text-center py-6">
+    <p>© 2025 Luka Lab — Built by Luka</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

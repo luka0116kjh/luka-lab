@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python — Luka Lab</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+  <header class="bg-white shadow p-4 sticky top-0">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <a href="../index.html" class="text-blue-600 font-bold text-lg">← Luka Lab</a>
+      <h1 class="text-gray-700 text-sm">Python / 더보기</h1>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto p-6 space-y-8">
+    <section class="bg-white rounded-lg shadow p-6">
+      <h2 class="text-2xl font-bold mb-4">Python Projects</h2>
+      <ul class="divide-y">
+        <li class="py-3">CSV 전처리 자동화 스크립트</li>
+        <li class="py-3">Pandas 데이터 시각화 예제</li>
+        <li class="py-3">파일 암호화 / 복호화 유틸</li>
+      </ul>
+    </section>
+
+    <section class="bg-white rounded-lg shadow p-6">
+      <h2 class="text-2xl font-bold mb-4">코드 예시</h2>
+      <pre class="bg-gray-100 p-3 rounded text-sm overflow-auto">
+import pandas as pd
+
+def load_csv(path):
+    df = pd.read_csv(path)
+    print(df.head())
+      </pre>
+    </section>
+  </main>
+
+  <footer class="mt-12 bg-gray-900 text-gray-300 text-center py-6">
+    <p>© 2025 Luka Lab — Python Layout</p>
+  </footer>
+
+</body>
+</html>
