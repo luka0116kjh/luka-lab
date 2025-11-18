@@ -6,14 +6,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const savedTheme = localStorage.getItem('theme');
   if (savedTheme === 'dark') {
     document.documentElement.classList.add('dark');
-    if (toggleBtn) toggleBtn.textContent = '☀️';
+    if (toggleBtn) toggleBtn.textContent = 'L';
   }
   
   if (toggleBtn) {
     toggleBtn.addEventListener('click', () => {
       document.documentElement.classList.toggle('dark');
       const isDark = document.documentElement.classList.contains('dark');
-      toggleBtn.textContent = isDark ? '☀️' : '🌙';
+      toggleBtn.textContent = isDark ? 'L' : 'D';
       
       // ✅ 테마 저장
       localStorage.setItem('theme', isDark ? 'dark' : 'light');
